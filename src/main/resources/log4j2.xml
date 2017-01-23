@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" status="DEBUG">
+    <Properties></Properties>
+    <ThresholdFilter/>
+    <Appenders>
+        <Appender type="Console" name="STDOUT">
+            <Layout type="PatternLayout" pattern="%m MDC%X%n"/>
+        </Appender>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
